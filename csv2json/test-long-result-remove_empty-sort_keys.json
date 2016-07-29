@@ -1,0 +1,27 @@
+[
+    {
+        "_channel": "cf_internal", 
+        "_city": "Prague", 
+        "_country": "CZE", 
+        "_created_at": "6/20/2016 14:23:47", 
+        "_id": "2027897925", 
+        "_ip": "195.113.16.90", 
+        "_region": "52", 
+        "_started_at": "6/20/2016 14:23:17", 
+        "_tainted": "false", 
+        "_trust": "1.0", 
+        "_unit_id": "980505675", 
+        "_worker_id": "32260140", 
+        "client_reply": "Can you tell me address of Shiraz restaurant?", 
+        "cons0": "name=shiraz restaurant", 
+        "cons1": "food_type=thai", 
+        "goal0": "address", 
+        "goal1": "phone", 
+        "nil": "0", 
+        "num_sys_replies": "1.0", 
+        "num_usr_replies": "0.0", 
+        "role": "usr", 
+        "sys00": "Hello , welcome to the Cambridge restaurant system? You can ask for restaurants by area , price range or food type . How may I help you?", 
+        "system_reply": "dummy"
+    }
+]

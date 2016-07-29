@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import argparse
+from csv2json import convert
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser(convert.__doc__)
+    p.add_argument('csv_input')
+    p.add_argument('json_output')
+    p.add_argument('--compact', default=False, action='store_true')
+    p.add_argument('--csv_delimiter', default=',')
+    p.add_argument('--csv_quotechar', default='"')
+    p.add_argument('--sort_keys', default=False, action='store_true')
+    p.add_argument('--custom_headers', default=None, type=str, nargs='+', 
+            help='If a csv file does not have headers, you should provide one')
+    p.add_argument('--remove_empty', default=False, action='store_true', 
+            help='Do not store empty column values to json')
+    c = p.parse_args()
+    if c.compact:
+        c.pretty_spaces = 0
+    else:
+        c.pretty_spaces = 4
+
+    convert(c.csv_input, c.json_output, pretty_spaces=c.pretty_spaces, 
+            sort_keys=c.sort_keys, delimiter=c.csv_delimiter, 
+            custom_headers=c.custom_headers, quotechar=c.csv_quotechar,
+            remove_empty=c.remove_empty)
