@@ -10,7 +10,6 @@ def load_csv(fp_in, delimiter=',', quotechar='"', remove_empty=False,
     rows = [row_dct for row_dct in r]
     if remove_empty:
         rows = [dict([(k, item) for k, item in row.items() if item]) for row in rows]
-    print(rows)
     return rows
 
 
@@ -34,12 +33,12 @@ def convert(csv, json, **kwargs):
     csv_local, json_local = None, None
     try:
         if csv == '-' or csv is None:
-            csv = sys.stdout
+            csv = sys.stdin
         elif isinstance(csv, str):
             csv = csv_local = open(csv, 'r')
 
         if json == '-' or json is None:
-            json = sys.stdin
+            json = sys.stdout
         elif isinstance(json, str):
             json = json_local = open(json, 'w')
 

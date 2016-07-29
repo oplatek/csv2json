@@ -1,5 +1,5 @@
-Csv2Json converter
-==================
+CSV to Json converter
+=====================
 
 Requires Python 3.4+
 
@@ -17,7 +17,8 @@ From a command line
 ```
 csv-to-json [-h] [--compact] [--csv_delimiter CSV_DELIMITER] 
             [--csv_quotechar CSV_QUOTECHAR] [--sort_keys]
-            [--custom_headers CUSTOM_HEADERS [CUSTOM_HEADERS ...]] [--remove_empty]
+            [--custom_headers CUSTOM_HEADERS [CUSTOM_HEADERS ...]] 
+            [--remove_empty]
             csv_input json_output
 
 ```
