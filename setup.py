@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
   name='csv2json',
   packages=['csv2json'],  # this must be the same as the name above
-  version='0.1',
+  version='0.2',
   description='A command-line tools and module to convert csv to json',
   author='Ondrej Platek',
   license='Apache 2.0',
