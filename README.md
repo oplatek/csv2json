@@ -6,7 +6,7 @@ Requires Python 3.4+
 Install
 -------
 ```
-pip install cvs2json
+pip install csv2json
 ```
 
 Usage
