@@ -23,6 +23,25 @@ csv-to-json [-h] [--compact] [--csv_delimiter CSV_DELIMITER]
 
 ```
 
+A command line example
+
+```
+$ cat file.csv
+a,b
+1,"foo""bar"
+2,baz
+$ csv-to-json < file.csv
+[
+    {
+        "a": "1",
+        "b": "foo\"bar"
+    },
+    {
+        "a": "2",
+        "b": "baz"
+    }
+]
+```
 
 As a library
 
