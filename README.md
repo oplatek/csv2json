@@ -1,5 +1,6 @@
 CSV to Json converter
 =====================
+![Travis CI badge for master branch](https://travis-ci.org/oplatek/csv2json.svg?branch=master)
 
 Requires Python 3.4+
 
@@ -51,3 +52,9 @@ from csv2json import convert, load_csv, save_json
 with open('input.csv') as r, open('output.json', 'w') as w:
     convert(r, w)
 ```
+
+Tests
+-----
+Run unittests e.g. by
+
+    python3 setup.py test
