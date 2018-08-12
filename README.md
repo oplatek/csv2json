@@ -1,6 +1,7 @@
 CSV to Json converter
 =====================
 ![Travis CI badge for master branch](https://travis-ci.org/oplatek/csv2json.svg?branch=master)
+[![PyPI version](https://badge.fury.io/py/csv2json.svg)](https://badge.fury.io/py/csv2json)
 
 Requires Python 3.4+
 
