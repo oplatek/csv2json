@@ -4,9 +4,9 @@ import sys
 
 
 def load_csv(fp_in, delimiter=',', quotechar='"', remove_empty=False, 
-        fieldnames=None, **kwargs):
+        custom_headers=None, **kwargs):
     r = csv.DictReader(fp_in, delimiter=delimiter, quotechar=quotechar, 
-            fieldnames=fieldnames)
+            fieldnames=custom_headers)
     rows = [row_dct for row_dct in r]
     if remove_empty:
         rows = [dict([(k, item) for k, item in row.items() if item]) for row in rows]
